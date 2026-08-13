@@ -1,0 +1,261 @@
+{
+  "audit_name": "oceania-gov-license-hourly-audit",
+  "scan_start": "2026-08-13T07:37:00Z",
+  "policy_version": "1.0.0",
+  "sources": [
+    {
+      "repo_id": "toolathon123/data-gov-au-mirror",
+      "metadata": {
+        "id": "toolathon123/data-gov-au-mirror",
+        "license_tag": "cc-by-4.0",
+        "last_modified": "2026-08-13T07:04:11.000Z",
+        "downloads": 0,
+        "private": false
+      },
+      "readme_license_decl": null
+    },
+    {
+      "repo_id": "toolathon123/data-govt-nz-mirror",
+      "metadata": {
+        "id": "toolathon123/data-govt-nz-mirror",
+        "license_tag": "cc-by-4.0",
+        "last_modified": "2026-08-13T07:04:23.000Z",
+        "downloads": 0,
+        "private": false
+      },
+      "readme_license_decl": null
+    },
+    {
+      "repo_id": "toolathon123/oceania-gov-open-data-catalog",
+      "metadata": {
+        "id": "toolathon123/oceania-gov-open-data-catalog",
+        "license_tag": "other",
+        "last_modified": "2026-08-13T07:04:32.000Z",
+        "downloads": 0,
+        "private": false
+      },
+      "readme_license_decl": null
+    }
+  ],
+  "counts": {
+    "total_scanned": 12000,
+    "total_found_in_files": 12000,
+    "compliant": 11906,
+    "violations": 45,
+    "missing": 0,
+    "needs_review": 24,
+    "changed": 25
+  },
+  "issues": {
+    "created": 94,
+    "updated": 0,
+    "closed": 0,
+    "skipped_dry_run": 0
+  },
+  "errors": [],
+  "issue_count": 94,
+  "scan_end": "2026-08-13T07:41:43Z",
+  "elapsed_seconds": 283.259,
+  "sample_findings": [
+    {
+      "mirror": "toolathon123/data-gov-au-mirror",
+      "record": {
+        "id": "au-gov-00140",
+        "title": "Northern Territory Government - Health open data series 140",
+        "publisher": "Northern Territory Government",
+        "category": "Health",
+        "license": "cc-by-nc-4.0",
+        "readme_license": "cc-by-nc-4.0",
+        "status": "prohibited",
+        "reason": "Non-commercial clause conflicts with government open data reuse policy (allows commercial use)",
+        "last_modified": "2025-10-27",
+        "downloads": 31233,
+        "source": "data.gov.au"
+      },
+      "status": "VIOLATION",
+      "reason": "CC BY-NC 4.0 - non-commercial restriction conflicts with open government reuse policy",
+      "rule_basis": "policy.prohibited_licenses['cc-by-nc-4.0']",
+      "detected_at": "2026-08-13T07:37:10Z"
+    },
+    {
+      "mirror": "toolathon123/data-gov-au-mirror",
+      "record": {
+        "id": "au-gov-00595",
+        "title": "Department of Health and Aged Care - Education open data series 595",
+        "publisher": "Department of Health and Aged Care",
+        "category": "Education",
+        "license": "cc-by-4.0",
+        "readme_license": "cc-by-3.0",
+        "status": "allowed",
+        "reason": null,
+        "last_modified": "2026-04-06",
+        "downloads": 246447,
+        "source": "data.gov.au"
+      },
+      "status": "CHANGED",
+      "reason": "README card declares 'cc-by-3.0' but the licence tag is 'cc-by-4.0'. Licence may have changed; human review required.",
+      "rule_basis": "policy.review_rules.readme_license_mismatch",
+      "detected_at": "2026-08-13T07:37:19Z"
+    },
+    {
+      "mirror": "toolathon123/data-gov-au-mirror",
+      "record": {
+        "id": "au-gov-00747",
+        "title": "Department of Climate Change, Energy, the Environment and Water - Defence open data series 747",
+        "publisher": "Department of Climate Change, Energy, the Environment and Water",
+        "category": "Defence",
+        "license": "cc-by-nc-sa-4.0",
+        "readme_license": "cc-by-nc-sa-4.0",
+        "status": "prohibited",
+        "reason": "Non-commercial clause conflicts with reuse policy",
+        "last_modified": "2025-04-27",
+        "downloads": 28392,
+        "source": "data.gov.au"
+      },
+      "status": "VIOLATION",
+      "reason": "CC BY-NC-SA 4.0 - non-commercial and share-alike restrictions are prohibited",
+      "rule_basis": "policy.prohibited_licenses['cc-by-nc-sa-4.0']",
+      "detected_at": "2026-08-13T07:37:24Z"
+    },
+    {
+      "mirror": "toolathon123/data-gov-au-mirror",
+      "record": {
+        "id": "au-gov-00757",
+        "title": "Department of Foreign Affairs and Trade - Housing open data series 757",
+        "publisher": "Department of Foreign Affairs and Trade",
+        "category": "Housing",
+        "license": "all-rights-reserved",
+        "readme_license": "all-rights-reserved",
+        "status": "prohibited",
+        "reason": "Not an open licence; all rights reserved",
+        "last_modified": "2026-07-09",
+        "downloads": 110337,
+        "source": "data.gov.au"
+      },
+      "status": "VIOLATION",
+      "reason": "Not an open licence - all rights reserved",
+      "rule_basis": "policy.prohibited_licenses['all-rights-reserved']",
+      "detected_at": "2026-08-13T07:37:24Z"
+    },
+    {
+      "mirror": "toolathon123/data-gov-au-mirror",
+      "record": {
+        "id": "au-gov-00840",
+        "title": "Bureau of Meteorology - Justice open data series 840",
+        "publisher": "Bureau of Meteorology",
+        "category": "Justice",
+        "license": "cc-by-nd-4.0",
+        "readme_license": "cc-by-nd-4.0",
+        "status": "prohibited",
+        "reason": "No-derivatives clause is prohibited",
+        "last_modified": "2025-06-11",
+        "downloads": 174754,
+        "source": "data.gov.au"
+      },
+      "status": "VIOLATION",
+      "reason": "CC BY-ND 4.0 - no-derivatives clause is prohibited for open data",
+      "rule_basis": "policy.prohibited_licenses['cc-by-nd-4.0']",
+      "detected_at": "2026-08-13T07:37:25Z"
+    },
+    {
+      "mirror": "toolathon123/data-gov-au-mirror",
+      "record": {
+        "id": "au-gov-00872",
+        "title": "Victorian Government - Community open data series 872",
+        "publisher": "Victorian Government",
+        "category": "Community",
+        "license": "cc-by-4.0",
+        "readme_license": "cc-by-3.0",
+        "status": "allowed",
+        "reason": null,
+        "last_modified": "2025-03-30",
+        "downloads": 198935,
+        "source": "data.gov.au"
+      },
+      "status": "CHANGED",
+      "reason": "README card declares 'cc-by-3.0' but the licence tag is 'cc-by-4.0'. Licence may have changed; human review required.",
+      "rule_basis": "policy.review_rules.readme_license_mismatch",
+      "detected_at": "2026-08-13T07:37:25Z"
+    },
+    {
+      "mirror": "toolathon123/data-gov-au-mirror",
+      "record": {
+        "id": "au-gov-00882",
+        "title": "Australian Border Force - Housing open data series 882",
+        "publisher": "Australian Border Force",
+        "category": "Housing",
+        "license": "odc-by",
+        "readme_license": "cc-by-4.0",
+        "status": "allowed",
+        "reason": null,
+        "last_modified": "2025-10-04",
+        "downloads": 407668,
+        "source": "data.gov.au"
+      },
+      "status": "CHANGED",
+      "reason": "README card declares 'cc-by-4.0' but the licence tag is 'odc-by'. Licence may have changed; human review required.",
+      "rule_basis": "policy.review_rules.readme_license_mismatch",
+      "detected_at": "2026-08-13T07:37:25Z"
+    },
+    {
+      "mirror": "toolathon123/data-gov-au-mirror",
+      "record": {
+        "id": "au-gov-01072",
+        "title": "Bureau of Meteorology - Education open data series 1072",
+        "publisher": "Bureau of Meteorology",
+        "category": "Education",
+        "license": "cc-by-3.0",
+        "readme_license": "cc-by-4.0",
+        "status": "allowed",
+        "reason": null,
+        "last_modified": "2026-06-19",
+        "downloads": 297715,
+        "source": "data.gov.au"
+      },
+      "status": "CHANGED",
+      "reason": "README card declares 'cc-by-4.0' but the licence tag is 'cc-by-3.0'. Licence may have changed; human review required.",
+      "rule_basis": "policy.review_rules.readme_license_mismatch",
+      "detected_at": "2026-08-13T07:37:29Z"
+    },
+    {
+      "mirror": "toolathon123/data-gov-au-mirror",
+      "record": {
+        "id": "au-gov-01119",
+        "title": "NSW Government - Justice open data series 1119",
+        "publisher": "NSW Government",
+        "category": "Justice",
+        "license": "cc-by-sa-4.0",
+        "readme_license": "cc-by-sa-4.0",
+        "status": "review",
+        "reason": "Share-alike clause requires compatibility review",
+        "last_modified": "2024-05-23",
+        "downloads": 107095,
+        "source": "data.gov.au"
+      },
+      "status": "NEEDS_REVIEW",
+      "reason": "Share-alike clause - verify compatibility with derivative re-publication",
+      "rule_basis": "policy.needs_review['cc-by-sa-4.0']",
+      "detected_at": "2026-08-13T07:37:32Z"
+    },
+    {
+      "mirror": "toolathon123/data-gov-au-mirror",
+      "record": {
+        "id": "au-gov-01241",
+        "title": "Victorian Government - Agriculture open data series 1241",
+        "publisher": "Victorian Government",
+        "category": "Agriculture",
+        "license": "cc-by-nc-4.0",
+        "readme_license": "cc-by-nc-4.0",
+        "status": "prohibited",
+        "reason": "Non-commercial clause conflicts with government open data reuse policy (allows commercial use)",
+        "last_modified": "2025-12-02",
+        "downloads": 481550,
+        "source": "data.gov.au"
+      },
+      "status": "VIOLATION",
+      "reason": "CC BY-NC 4.0 - non-commercial restriction conflicts with open government reuse policy",
+      "rule_basis": "policy.prohibited_licenses['cc-by-nc-4.0']",
+      "detected_at": "2026-08-13T07:37:33Z"
+    }
+  ]
+}
