@@ -1,0 +1,51 @@
+{
+  "audit": {
+    "name": "oceania-gov-license-hourly-audit",
+    "frequency": "hourly",
+    "timezone": "UTC",
+    "page_size": 100,
+    "max_records": 0,
+    "request_timeout_seconds": 30,
+    "retry": {
+      "max_attempts": 5,
+      "base_delay_seconds": 2,
+      "max_delay_seconds": 60
+    },
+    "rate_limit": {
+      "requests_per_minute": 600,
+      "max_per_page": 100
+    }
+  },
+  "huggingface": {
+    "api_base": "https://huggingface.co/api",
+    "datasets_server_base": "https://datasets-server.huggingface.co",
+    "author": "toolathon123",
+    "mirror_search_terms": [
+      "gov",
+      "data.gov.au",
+      "data.govt.nz",
+      "oceania"
+    ],
+    "mirror_datasets": [
+      "toolathon123/data-gov-au-mirror",
+      "toolathon123/data-govt-nz-mirror",
+      "toolathon123/oceania-gov-open-data-catalog"
+    ],
+    "catalog_filename": "catalog.csv",
+    "readme_filename": "README.md",
+    "discover_via_search": false
+  },
+  "github": {
+    "api_base": "https://api.github.com",
+    "raw_base": "https://raw.githubusercontent.com",
+    "owner": "atool3800-stack",
+    "policy_repo": "gov-license-policy",
+    "policy_path": "license-policy.json",
+    "issue_label": "hourly-license-audit",
+    "issue_title_prefix": "[hourly-license-audit]"
+  },
+  "output": {
+    "summary_dir": "outputs",
+    "latest_symlink": "outputs/latest_summary.json"
+  }
+}
