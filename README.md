@@ -68,3 +68,20 @@ See [`gov-license-policy`](https://github.com/atool3800-stack/gov-license-policy
 (`license-policy.json`): allowed licenses (CC BY 4.0 / CC0 / PDDL / ODC-BY), prohibited
 licenses & terms (NC/ND, all-rights-reserved, unknown), and needs-review conditions
 (share-alike, `other`, README/tag mismatch).
+
+
+## Reference run (2026-08-13 07:37Z)
+
+| Metric | Value |
+|--------|-------|
+| Records scanned (paginated) | 12,000 |
+| Compliant | 11,906 |
+| Violations | 45 |
+| Needs review | 24 |
+| Changed (README/tag mismatch) | 25 |
+| Issues created | 94 |
+| Policy version | 1.0.0 |
+
+Subsequent re-runs are **idempotent**: they update existing issues (`updated: 94`, `created: 0`),
+and when a dataset becomes compliant its issue is auto-closed (`closed: 1` verified for
+`au-gov-00140` after its license was corrected to CC BY 4.0).
