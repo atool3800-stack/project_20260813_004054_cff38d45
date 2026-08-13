@@ -1,0 +1,35 @@
+name: hourly-license-audit
+
+on:
+  schedule:
+    # every hour at minute 5 (UTC)
+    - cron: "5 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Run hourly license audit
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python -m audit.run_audit --config config/audit_config.json
+      - name: Commit audit summary
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git config user.name "license-audit-bot"
+          git config user.email "license-audit-bot@example.com"
+          git add outputs/
+          git diff --cached --quiet || git commit -m "hourly audit summary $(date -u +%Y%m%dT%H%M%SZ)"
+          git push
