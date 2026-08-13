@@ -136,7 +136,7 @@ class HFClient:
     # ------------------------------------------------------------------ #
     def get_readme(self, repo_id: str, filename: str = "README.md") -> Optional[str]:
         """Fetch the dataset card README text (raw), returns None if missing."""
-        url = f"{self.api_base}/datasets/{repo_id}/README"
+        url = f"https://huggingface.co/datasets/{repo_id}/raw/main/{filename}"
         try:
             resp = self._request("GET", url)
         except requests.HTTPError:
