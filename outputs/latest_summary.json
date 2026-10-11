@@ -1,6 +1,6 @@
 {
   "audit_name": "oceania-gov-license-hourly-audit",
-  "scan_start": "2026-10-11T08:30:55Z",
+  "scan_start": "2026-10-11T15:27:19Z",
   "policy_version": "1.0.0",
   "sources": [
     {
@@ -9,7 +9,7 @@
         "id": "toolathon123/data-gov-au-mirror",
         "license_tag": "cc-by-4.0",
         "last_modified": "2026-08-13T07:46:59.000Z",
-        "downloads": 39,
+        "downloads": 37,
         "private": false
       },
       "readme_license_decl": "cc-by-4.0"
@@ -20,7 +20,7 @@
         "id": "toolathon123/data-govt-nz-mirror",
         "license_tag": "cc-by-4.0",
         "last_modified": "2026-08-13T07:04:23.000Z",
-        "downloads": 164,
+        "downloads": 161,
         "private": false
       },
       "readme_license_decl": "cc-by-4.0"
@@ -31,7 +31,7 @@
         "id": "toolathon123/oceania-gov-open-data-catalog",
         "license_tag": "other",
         "last_modified": "2026-08-13T07:04:32.000Z",
-        "downloads": 170,
+        "downloads": 169,
         "private": false
       },
       "readme_license_decl": "other"
@@ -54,8 +54,8 @@
   },
   "errors": [],
   "issue_count": 0,
-  "scan_end": "2026-10-11T08:31:24Z",
-  "elapsed_seconds": 29.156,
+  "scan_end": "2026-10-11T15:27:39Z",
+  "elapsed_seconds": 19.836,
   "sample_findings": [
     {
       "mirror": "toolathon123/data-gov-au-mirror",
@@ -75,7 +75,7 @@
       "status": "CHANGED",
       "reason": "README card declares 'cc-by-3.0' but the licence tag is 'cc-by-4.0'. Licence may have changed; human review required.",
       "rule_basis": "policy.review_rules.readme_license_mismatch",
-      "detected_at": "2026-10-11T08:30:59Z"
+      "detected_at": "2026-10-11T15:27:22Z"
     },
     {
       "mirror": "toolathon123/data-gov-au-mirror",
@@ -95,7 +95,7 @@
       "status": "VIOLATION",
       "reason": "CC BY-NC-SA 4.0 - non-commercial and share-alike restrictions are prohibited",
       "rule_basis": "policy.prohibited_licenses['cc-by-nc-sa-4.0']",
-      "detected_at": "2026-10-11T08:30:59Z"
+      "detected_at": "2026-10-11T15:27:23Z"
     },
     {
       "mirror": "toolathon123/data-gov-au-mirror",
@@ -115,7 +115,7 @@
       "status": "VIOLATION",
       "reason": "Not an open licence - all rights reserved",
       "rule_basis": "policy.prohibited_licenses['all-rights-reserved']",
-      "detected_at": "2026-10-11T08:30:59Z"
+      "detected_at": "2026-10-11T15:27:23Z"
     },
     {
       "mirror": "toolathon123/data-gov-au-mirror",
@@ -135,7 +135,7 @@
       "status": "VIOLATION",
       "reason": "CC BY-ND 4.0 - no-derivatives clause is prohibited for open data",
       "rule_basis": "policy.prohibited_licenses['cc-by-nd-4.0']",
-      "detected_at": "2026-10-11T08:31:00Z"
+      "detected_at": "2026-10-11T15:27:24Z"
     },
     {
       "mirror": "toolathon123/data-gov-au-mirror",
@@ -155,7 +155,7 @@
       "status": "CHANGED",
       "reason": "README card declares 'cc-by-3.0' but the licence tag is 'cc-by-4.0'. Licence may have changed; human review required.",
       "rule_basis": "policy.review_rules.readme_license_mismatch",
-      "detected_at": "2026-10-11T08:31:00Z"
+      "detected_at": "2026-10-11T15:27:24Z"
     },
     {
       "mirror": "toolathon123/data-gov-au-mirror",
@@ -175,7 +175,7 @@
       "status": "CHANGED",
       "reason": "README card declares 'cc-by-4.0' but the licence tag is 'odc-by'. Licence may have changed; human review required.",
       "rule_basis": "policy.review_rules.readme_license_mismatch",
-      "detected_at": "2026-10-11T08:31:00Z"
+      "detected_at": "2026-10-11T15:27:24Z"
     },
     {
       "mirror": "toolathon123/data-gov-au-mirror",
@@ -195,7 +195,7 @@
       "status": "CHANGED",
       "reason": "README card declares 'cc-by-4.0' but the licence tag is 'cc-by-3.0'. Licence may have changed; human review required.",
       "rule_basis": "policy.review_rules.readme_license_mismatch",
-      "detected_at": "2026-10-11T08:31:00Z"
+      "detected_at": "2026-10-11T15:27:24Z"
     },
     {
       "mirror": "toolathon123/data-gov-au-mirror",
@@ -215,7 +215,7 @@
       "status": "NEEDS_REVIEW",
       "reason": "Share-alike clause - verify compatibility with derivative re-publication",
       "rule_basis": "policy.needs_review['cc-by-sa-4.0']",
-      "detected_at": "2026-10-11T08:31:02Z"
+      "detected_at": "2026-10-11T15:27:25Z"
     },
     {
       "mirror": "toolathon123/data-gov-au-mirror",
@@ -235,7 +235,7 @@
       "status": "VIOLATION",
       "reason": "CC BY-NC 4.0 - non-commercial restriction conflicts with open government reuse policy",
       "rule_basis": "policy.prohibited_licenses['cc-by-nc-4.0']",
-      "detected_at": "2026-10-11T08:31:03Z"
+      "detected_at": "2026-10-11T15:27:25Z"
     },
     {
       "mirror": "toolathon123/data-gov-au-mirror",
@@ -255,7 +255,7 @@
       "status": "VIOLATION",
       "reason": "Not an open licence - all rights reserved",
       "rule_basis": "policy.prohibited_licenses['all-rights-reserved']",
-      "detected_at": "2026-10-11T08:31:03Z"
+      "detected_at": "2026-10-11T15:27:25Z"
     }
   ]
 }
